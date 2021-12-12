@@ -1,0 +1,54 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 94
+    length: 77
+    placeholder_text: '...  # TODO запросить у пользователя год рождения'
+    initial_state:
+      length: 49
+      offset: 94
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: 'int(input("Год рождения: "))'
+  - offset: 221
+    length: 45
+    placeholder_text: '...  # TODO запросить у пользователя текущий год'
+    initial_state:
+      length: 48
+      offset: 163
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: 'int(input("Текущий год: "))'
+  - offset: 341
+    length: 72
+    placeholder_text: '# TODO посчитать и распечатать количество прожитых дней'
+    initial_state:
+      length: 55
+      offset: 217
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |-
+      days = (current_year - start_year) * DAYS_OF_YEAR
+          print(days)
+  text: |
+    if __name__ == "__main__":
+        DAYS_OF_YEAR = 365  # количество дней в году
+
+        start_year = ...  # TODO запросить у пользователя год рождения
+        current_year = ...  # TODO запросить у пользователя текущий год
+
+        # TODO посчитать и распечатать количество прожитых дней
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  time: Sat, 09 Oct 2021 13:43:11 UTC
+record: -1
+post_submission_on_open: true

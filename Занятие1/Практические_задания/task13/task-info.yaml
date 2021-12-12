@@ -1,0 +1,44 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    5
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 46
+    length: 56
+    placeholder_text: '...  # TODO список чисел кратных 17'
+    initial_state:
+      length: 35
+      offset: 46
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: list(range(17, 100, 17))
+  - offset: 114
+    length: 54
+    placeholder_text: '...)  # TODO количество чисел кратных 17'
+    initial_state:
+      length: 40
+      offset: 93
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: len(list_numbers))
+  text: |
+    if __name__ == "__main__":
+        list_numbers = ...  # TODO список чисел кратных 17
+
+        print(...)  # TODO количество чисел кратных 17
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 09 Oct 2021 13:29:56 UTC
+record: -1
